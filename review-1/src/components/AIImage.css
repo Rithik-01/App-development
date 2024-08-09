@@ -1,0 +1,128 @@
+/* AIImage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.file-input-container input[type="file"] {
+    display: none;
+}
+
+.custom-file-input {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.custom-file-input:hover {
+    background-color: #45a049;
+}
+
+.custom-button {
+    margin-left: 20px;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.custom-button:hover {
+    background-color: #007bb5;
+}
+
+.image-preview {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0;
+}
+
+.response-container {
+    margin: 30px 0;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.response-container h3,
+.response-container p {
+    margin-bottom: 15px;
+}
+
+.response-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.response-container li {
+    margin-bottom: 10px;
+}
+
+.response-header {
+    color: #4CAF50;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.response-section {
+    margin-bottom: 20px;
+}
+
+.response-section p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.response-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.response-section li {
+    margin-bottom: 10px;
+}
