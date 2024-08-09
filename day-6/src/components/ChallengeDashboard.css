@@ -1,0 +1,120 @@
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Grid layout */
+  .challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .challenges-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .challenges-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Challenge card styles */
+  .challenge-card {
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  
+  .challenge-card-header {
+    position: relative;
+    height: 8rem;
+    background-color: #e5e7eb;
+  }
+  
+  .challenge-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .challenge-card-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .challenge-card-overlay-text {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .challenge-card-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .challenge-card-brand {
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  
+  .challenge-card-content {
+    padding: 1rem;
+  }
+  
+  .challenge-card-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .challenge-card-description,
+  .challenge-card-date,
+  .challenge-card-friends {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .challenge-card-friends {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .challenge-card-friends-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .challenge-card-button {
+    width: 100%;
+    background-color: #f97316;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .challenge-card-button:hover {
+    background-color: #ea580c;
+  }
